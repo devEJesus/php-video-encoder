@@ -18,7 +18,7 @@ A simple PHP-based video encoder that converts raw RGB24 frames to YUV420p forma
 You can install the package via composer:
 
 ```bash
-composer require devejesus/php-video-encoder
+composer require devejesus/video-encoder
 ```
 
 ## Usage
