@@ -24,8 +24,8 @@ composer require devejesus/php-video-encoder
 ## Usage
 
 ```php
-use Devejesus\PhpVideoEncoder\Encoder\RGB24ToYUV420Encoder;
-use Devejesus\PhpVideoEncoder\Model\VideoConfig;
+use Devejesus\VideoEncoder\Encoder\RGB24ToYUV420Encoder;
+use Devejesus\VideoEncoder\Model\VideoConfig;
 
 // Create a video configuration
 $config = new VideoConfig(384, 216); // width and height must be even numbers
