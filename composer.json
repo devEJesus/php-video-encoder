@@ -1,0 +1,40 @@
+{
+    "name": "devejesus/video-encoder",
+    "description": "A simple PHP-based video encoder that converts raw RGB24 frames to YUV420p format using custom pixel processing.",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Devejesus\\VideoEncoder\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Devejesus\\VideoEncoder\\Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "devejesus"
+        }
+    ],
+    "require": {
+        "php": ">=8.0"
+    },
+    "require-dev": {
+        "pestphp/pest": "^3.0",
+        "phpstan/phpstan": "^2.1",
+        "laravel/pint": "^1.22"
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "scripts": {
+        "test": "pest",
+        "analyse": "phpstan analyse --ansi",
+        "pint" : "pint",
+        "pint-test" : "pint --test"
+    }
+}
